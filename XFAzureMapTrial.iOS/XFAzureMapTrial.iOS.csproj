@@ -130,7 +130,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\XFAzureMapTrial\XFAzureMapTrial.csproj">
-      <Project>{808512E3-38B0-4816-9ABF-D2583AC1DBF1}</Project>
+      <Project>{4D7A7560-A00F-409C-9AB5-12BEACE0024D}</Project>
       <Name>XFAzureMapTrial</Name>
     </ProjectReference>
   </ItemGroup>
