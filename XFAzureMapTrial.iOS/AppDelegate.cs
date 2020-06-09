@@ -23,6 +23,7 @@ namespace XFAzureMapTrial.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Xamarin.Calabash.Start();
+            Xamarin.FormsMaps.Init();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
