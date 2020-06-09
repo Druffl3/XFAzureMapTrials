@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
 using XFAzureMapTrial.Models;
 using XFAzureMapTrial.Services;
 
@@ -17,6 +18,8 @@ namespace XFAzureMapTrial
     public partial class MainPage : ContentPage
     {
         readonly string azureKey = "";
+
+        private List<Pin> addressPins = new List<Pin>();
 
         public MainPage()
         {
@@ -40,8 +43,11 @@ namespace XFAzureMapTrial
                     var result = await RequestProvider.Instance.GetAsync<Temperatures>(stringUri.ToString());
                     if (result != null && result.Results != null && result.Results.Count > 0)
                     {
+                        Xamarin.Forms.Maps.Position pos = new Xamarin.Forms.Maps.Position(result.Results[0].Position.Lat, result.Results[0].Position.Lon);
+                        this.gMap.MoveToRegion(MapSpan.FromCenterAndRadius(pos, Distance.FromKilometers(1.0)));
+
                         foreach (Result res in result.Results)
-                            AddPinToMap(res.Position, res.Address.FreeformAddress);
+                            AddPinToMap(res.Position, res.Address.LocalName ,res.Address.FreeformAddress);
                     }
                 }
                 catch (Exception ex)
@@ -52,9 +58,17 @@ namespace XFAzureMapTrial
             }
         }
 
-        private void AddPinToMap(Position pos, string address)
+        private void AddPinToMap(XFAzureMapTrial.Models.Position pos, string label ,string address)
         {
-            //TODO:
+            Pin pin = new Pin
+            {
+                Type = PinType.Place,
+                Label = label,
+                Address = address,
+                Position = new Xamarin.Forms.Maps.Position(pos.Lat, pos.Lon)
+            };
+
+            this.gMap.Pins.Add(pin);
         }
 
     }

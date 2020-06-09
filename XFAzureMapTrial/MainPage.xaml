@@ -7,9 +7,11 @@
              Title="XFAzureMaps">
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="XFAzureMaps" VerticalOptions="CenterAndExpand"
+        <Label Text="XFAzureMapTrials" VerticalOptions="CenterAndExpand"
+               FontAttributes="Bold"
                HorizontalOptions="CenterAndExpand"/>
         <maps:Map MapType="Street" HeightRequest="500" WidthRequest="500"
+                  x:Name="gMap"
             HorizontalOptions="CenterAndExpand"
             VerticalOptions="CenterAndExpand"
             Margin="16"/>
