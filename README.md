@@ -1,2 +1,2 @@
 # XFAzureMapTrials
-Use Azure Maps SDK with Xamarin.Forms
+Use Azure Maps REST APIs with Xamarin.Forms
