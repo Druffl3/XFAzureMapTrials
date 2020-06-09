@@ -19,8 +19,6 @@ namespace XFAzureMapTrial
     {
         readonly string azureKey = "";
 
-        private List<Pin> addressPins = new List<Pin>();
-
         public MainPage()
         {
             InitializeComponent();
