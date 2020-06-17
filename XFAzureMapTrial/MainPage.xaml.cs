@@ -9,6 +9,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using XFAzureMapTrial.Models;
 using XFAzureMapTrial.Services;
+using XFAzureMapTrial.Views;
 
 namespace XFAzureMapTrial
 {
@@ -17,7 +18,7 @@ namespace XFAzureMapTrial
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        readonly string azureKey = "";
+        readonly string azureKey = AppConstants.SubscriptionKey;
 
         public MainPage()
         {
@@ -69,5 +70,9 @@ namespace XFAzureMapTrial
             this.gMap.Pins.Add(pin);
         }
 
+        void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new IndoorMapPage());
+        }
     }
 }

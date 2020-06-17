@@ -4,12 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" x:Class="XFAzureMapTrial.MainPage"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
-             Title="XFAzureMaps">
+             Title="XFAzureMapTrials">
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="XFAzureMapTrials" VerticalOptions="CenterAndExpand"
-               FontAttributes="Bold"
-               HorizontalOptions="CenterAndExpand"/>
+        <Button Text="Indoor Map"
+                HeightRequest="50"
+                WidthRequest="100"
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="Button_Clicked"/>
         <maps:Map MapType="Street" HeightRequest="500" WidthRequest="500"
                   x:Name="gMap"
             HorizontalOptions="CenterAndExpand"
