@@ -56,3 +56,5 @@ Once you have the above requirements, perform the following steps:
   NOTE:
   Since the .js files used in the IndoorMapWeb sample uses WebGL components, the WebView might not render index.html in certain Android devices. According to this document https://developer.chrome.com/multidevice/webview/overview, WebGL support is available from chromium v36 and above. You can update the same on your android device. 
   This answer https://stackoverflow.com/questions/30844557/supporting-webgl-on-android-5s-webview/30916299#30916299, informs on how to check if the device gpu is blocked by the browser and suggested workaround using CrossWalk.
+  
+  Ad Astra
