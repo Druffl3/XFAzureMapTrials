@@ -6,7 +6,7 @@ namespace XFAzureMapTrial
 {
     public sealed class AppConstants
     {
-        public static string SubscriptionKey { get; } = "";
         public static string EndPoint { get; } = "";
+        public static string SubscriptionKey { get; } = "";
     }
 }
