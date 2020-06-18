@@ -3,6 +3,15 @@ Azure Maps recently announced a 'Create' feature where custom maps can be loaded
 
 An alternative solution would be to embed the Web implmentation in a WebView as suggested in the link above.
 
+Android
+<img src="https://github.com/Druffl3/XFAzureMapTrials/blob/master/Screenshots/androidAzureIndoorMap.png" width="200" height="400" />
+
+iOS
+<img src="https://github.com/Druffl3/XFAzureMapTrials/blob/master/Screenshots/iOSAzureIndoorMap.png" width="200" height="400" />
+
+UWP
+<img src="https://github.com/Druffl3/XFAzureMapTrials/blob/master/Screenshots/uwpAzureIndoorMap.PNG" width="400" height="400" />
+
 Before building this project follow through their documentation: https://docs.microsoft.com/en-us/azure/azure-maps/tutorial-creator-indoor-maps#prerequisites and have your prerequisites listed below ready.
 
 Prerequisites:
