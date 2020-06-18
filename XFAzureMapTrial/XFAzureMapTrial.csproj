@@ -11,6 +11,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="CustomControls\**" />
+    <Compile Remove="Interfaces\**" />
+    <EmbeddedResource Remove="CustomControls\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <None Remove="CustomControls\**" />
+    <None Remove="Interfaces\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991864" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="4.4.0.991864" />
@@ -20,7 +29,5 @@
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Views\" />
-    <Folder Include="CustomControls\" />
-    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>
