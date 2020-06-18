@@ -20,8 +20,8 @@ namespace XFAzureMapTrial.UWP.CustomRenderers
             if (e.OldElement != null || e.NewElement == null || Control == null)
                 return;
 
-            Windows.UI.Xaml.Controls.WebView webView = new Windows.UI.Xaml.Controls.WebView(WebViewExecutionMode.SeparateProcess);
-            webView.Source = Control.Source;
+            Windows.UI.Xaml.Controls.WebView newWebView = new Windows.UI.Xaml.Controls.WebView(WebViewExecutionMode.SeparateProcess);
+            newWebView.Source = Control.Source;
             SetNativeControl(webView);
         }
     }
