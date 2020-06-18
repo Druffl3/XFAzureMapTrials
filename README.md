@@ -30,7 +30,7 @@ Once you have the above requirements, perform the following steps:
    
    In UWP add your Bing Maps API key in MainPage.xaml.cs inside XFAzureMapTrial.UWP project
    <code>Xamarin.FormsMaps.Init("Your_API_Key");</code>
-   If you don't want to use Xamarin.Forms.Map then do not initialise FormsMaps and remove the render assemblies from App.Xaml.cs instead initializing Forms like this
+   If you don't want to use Xamarin.Forms.Map then do not initialise FormsMaps and remove the render assemblies from App.Xaml.cs and instead intitialise Forms like this
    <code>Xamarin.Forms.Forms.Init(e);</code>
  
  2. Open index.html present in IndoorMapWeb folder and add your subscription key and IDs
